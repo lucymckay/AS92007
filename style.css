@@ -1,0 +1,115 @@
+body {
+  margin: auto;
+  padding: 50px;
+  color: #000;
+  font-family: 'Courier New', monospace;
+   background-color: #fefdfb;
+}
+
+a,
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Times New Roman', serif;
+}
+
+/* Makes header size adjust to screen width */
+h1 {
+  font-size:4vw;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "logo banner banner banner"
+    "nav nav nav nav"
+    "main main main main"
+    "foot foot foot foot";
+  background-color: #fefdfb;
+  grid-gap: 4px;
+}
+
+.box {
+  background-color: #444;
+  padding: 20px;
+}
+
+.logo,
+.banner,
+.footer {
+  background-color: #404040;
+}
+
+.logo,
+.banner,
+.side,
+.footer {
+  color: #fefdfb;
+}
+
+.logo {
+  grid-area: logo;
+  max-height: 200px;
+  padding-left: 4px;
+  padding-top: 20px;
+  padding-bottom: 0;
+
+}
+
+.banner {
+  grid-area: banner;
+  vertical-align: middle;
+  font-family: 'Times New Roman', serif;
+  max-height: 200px;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+/* Navigation bar */
+.nav {
+  grid-area: nav;
+  background-color: #f0d447;
+  color: #000;
+  text-align: center;
+  font-size: 150%;
+}
+
+/* Main text section */
+.main {
+  grid-area: main;
+  background-color: #fefdfb;
+  border-style: solid;
+  border-color: #f0d447;
+  color: #404040;
+}
+
+/* Footer/credit */
+.footer {
+  grid-area: foot;
+  text-align: right;
+  color: #fefdfb;
+}
+
+/* Link styling */
+a {
+  font-weight: bold;
+}
+a:link {
+  color: #404040;
+}
+a:visited {
+  color: #404040;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
